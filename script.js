@@ -19,7 +19,13 @@ function addTodoItem(todo) {
     checkbox.type = 'checkbox';
     checkbox.classList.add('ml-2', 'mr-3');
     checkbox.addEventListener('change',function(e){
-        list_item.classList.toggle('line-through');
+        if(checkbox.checked){
+            label.classList.add('line-through');
+        }
+        else{
+            label.classList.remove('line-through');
+        }
+        
         
     })
 
