@@ -30,6 +30,11 @@ function addTodoItem(todo) {
     const editBtn = document.createElement('button');
     editBtn.innerHTML = '<i class="fas fa-edit"></i>';
     editBtn.classList.add('ml-3', 'bg-blue-500', 'hover:bg-blue-700', 'text-white', 'font-bold', 'py-2', 'px-4', 'rounded');
+    editBtn.style.width = '32px'; 
+    editBtn.style.height = '32px'; 
+    editBtn.style.display = 'flex'; 
+    editBtn.style.alignItems = 'center'; 
+    editBtn.style.justifyContent = 'center';
     editBtn.addEventListener('click',function(e){
         e.preventDefault();
         const confirmEdit = confirm('Are you sure you want to edit this item?');
@@ -45,6 +50,11 @@ function addTodoItem(todo) {
     const deleteBtn = document.createElement('button');
     deleteBtn.innerHTML = '<i class="fas fa-trash"></i>';
     deleteBtn.classList.add('ml-3', 'bg-red-500', 'hover:bg-red-700', 'text-white', 'font-bold', 'py-2', 'px-4', 'rounded');
+    deleteBtn.style.width = '32px'; 
+    deleteBtn.style.height = '32px'; 
+    deleteBtn.style.display = 'flex'; 
+    deleteBtn.style.alignItems = 'center'; 
+    deleteBtn.style.justifyContent = 'center';
     deleteBtn.addEventListener('click',function(e){
         e.preventDefault();
         const confirmDelete = confirm('Are you sure you want to delete this item?');
